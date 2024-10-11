@@ -1,0 +1,39 @@
+/* paleta #222222 #FFFFFF #1C5D99 #639FAB #BBCDE5 */
+
+
+
+.App {
+  text-align: center;
+  margin: auto;
+  
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #222222;
+
+  color: #222222;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
