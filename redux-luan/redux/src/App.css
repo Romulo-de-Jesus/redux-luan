@@ -1,16 +1,22 @@
 /* paleta #222222 #FFFFFF #1C5D99 #639FAB #BBCDE5 */
 
 
+:root {
+  --primary-color: #61dafb;
+  --background-color: #222222;
+  --text-color: #ffffff;
+  --logo-height: 40vmin;
+}
 
 .App {
   text-align: center;
   margin: auto;
-  
 }
 
 .App-logo {
-  height: 40vmin;
+  height: var(--logo-height);
   pointer-events: none;
+  transition: transform 0.5s; /* Transição suave para efeitos futuros */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -20,13 +26,19 @@
 }
 
 .App-header {
-  background-color: #222222;
-
-  color: #222222;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 20px; /* Adiciona um pouco de espaçamento */
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--primary-color);
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s; /* Transição suave para hover */
+}
+
+.App-link:hover {
+  color: darken(var(--primary-color), 10%); /* Efeito hover suave */
 }
 
 @keyframes App-logo-spin {
