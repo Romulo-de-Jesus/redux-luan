@@ -1,13 +1,11 @@
 // src/index.js
-import './index.css'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App'; // Certifique-se de que App está sendo importado corretamente
-import { ThemeProvider } from "./ThemeContext"
 
 ReactDOM.render(
-  <ThemeProvider>
+  <React.StrictMode>
     <App />
-  </ThemeProvider>,
-    document.getElementById("root")
+  </React.StrictMode>,
+  document.getElementById('root') // Certifique-se de que o 'root' está correto
 );
