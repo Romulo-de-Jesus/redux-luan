@@ -7,7 +7,7 @@ const BotaoTrocarTema = () => {
   
     return (
       <button onClick={toggleTheme}>
-        Mudar para modo {theme === "light" ? "escuro" : "claro"}
+        Mudar para modo {theme === "claro" ? "escuro" : "claro"}
       </button>
     );
   };

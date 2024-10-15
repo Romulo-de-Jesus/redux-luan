@@ -3,11 +3,7 @@ Provider{
   margin: auto;
 }
 
-p, li, button, input{
-  font-family: sans-serif;
-  font-weight: bold;
-  color: #222222;
-}
+
 h1{
   font-family: sans-serif;
   font-weight: bold;
@@ -19,9 +15,46 @@ h1{
 
 }
 
-html{
+body.claro{ /* aparencia no tema claro*/ 
+  p, li, button, input{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #222222;
+  }
 background-color: #BBCDE5;
 
+}
+
+body.escuro{ /* aparencia no tema escuro*/ 
+background-color: #000;
+      p, li, button{
+      font-family: sans-serif;
+      font-weight: bold;
+      color: #fff;
+    }
+      button{
+        background-color: #1C5D99;
+        border-color: #000;
+        outline: none;
+        box-shadow: none
+      }
+
+      input{
+        font-family: sans-serif;
+        font-weight: bold;
+        color: #222222;
+      }
+
+      .DivApp{
+        background-color: #333;
+        border-color: #333;
+      }
+
+      h1{
+        color: #fff;
+      }
+
+      
 }
 button{
 margin-left: 10px;

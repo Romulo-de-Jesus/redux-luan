@@ -4,10 +4,11 @@ import React, { createContext, useState } from "react";
 export const ThemeContext = createContext(); // Verifique se o contexto está sendo exportado corretamente
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState("light"); // Inicializando o tema como "light"
+  const [theme, setTheme] = useState("claro"); // Inicializando o tema como "claro"
 
   const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+    setTheme((prevTheme) => (prevTheme === "claro" ? "escuro" : "claro")
+  );
   };
 
   return (
